@@ -1,0 +1,203 @@
+.containerProductSingle {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapperSingleProduct {
+  padding: 3rem;
+  display: flex;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapperSingleProduct {
+    padding: 0.5rem;
+    flex-direction: column;
+  }
+}
+
+.wrapperSingleProduct .imgContainerSingleProduct {
+  flex: 1;
+}
+
+.wrapperSingleProduct .imgContainerSingleProduct img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapperSingleProduct .imgContainerSingleProduct img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
+
+.wrapperSingleProduct .infoContainerProduct {
+  flex: 1;
+  padding: 0 3rem;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapperSingleProduct .infoContainerProduct {
+    flex: 1;
+    padding: 0 1rem;
+  }
+}
+
+.wrapperSingleProduct .infoContainerProduct .titleSingleProduct {
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.wrapperSingleProduct .infoContainerProduct .descSingleProduct {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapperSingleProduct .infoContainerProduct .descSingleProduct {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    font-weight: 200;
+  }
+}
+
+.wrapperSingleProduct .infoContainerProduct .priceSingleProduct {
+  font-weight: 100;
+  font-size: 2.1rem;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapperSingleProduct .infoContainerProduct .priceSingleProduct {
+    font-weight: 100;
+    font-size: 2rem;
+  }
+}
+
+.filterContainerSingleProduct {
+  width: 50%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterSingleProduct {
+  display: flex;
+  align-items: center;
+}
+
+.filterTextSingle {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 380px) {
+  .filterTextSingle {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+}
+
+.filterColor {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: rebeccapurple;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  .filterColor {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
+
+.filterSizeSingle {
+  margin-left: 1rem;
+  padding: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 380px) {
+  .filterSizeSingle {
+    padding: 3px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .filterContainerSingleProduct {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.addContainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 380px) {
+  .addContainer {
+    width: 100%;
+    font-size: 1rem;
+    justify-content: space-around;
+  }
+}
+
+.amount {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.8rem;
+  border: thin solid teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+.amountContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amountContainer .remove,
+.amountContainer .add {
+  cursor: pointer;
+}
+
+.amountContainer .add {
+  margin-right: 1rem;
+}
+
+.btnSingleProduct {
+  padding: 1rem;
+  border: 2px solid teal;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btnSingleProduct:hover {
+  background-color: #f8f4f4;
+}
+
+@media screen and (max-width: 380px) {
+  .btnSingleProduct {
+    padding: 0.5rem;
+  }
+}

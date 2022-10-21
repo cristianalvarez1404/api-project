@@ -1,0 +1,171 @@
+.navBar {
+  width: 100vw;
+  height: 3.75rem;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 380px) {
+  .navBar {
+    height: 50px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0.8rem 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapper {
+    padding: 0.5rem 0;
+  }
+}
+
+.wrapper > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapper .language {
+    display: none;
+  }
+}
+
+.wrapper .left {
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.left .search-container {
+  height: 70%;
+  color: #d3d3d3;
+  font-size: 0.9rem;
+  border: thin solid #d3d3d3;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.left .inputSearch {
+  width: 15rem;
+  height: 70%;
+  border: 0;
+  outline: 0;
+  margin-left: 1.3rem;
+  border: thin solid #d3d3d3;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-right: none;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 380px) {
+  .left .inputSearch {
+    width: 4.5rem;
+  }
+}
+
+.center .logo {
+  font-weight: 900;
+  text-align: center;
+}
+
+@media screen and (max-width: 380px) {
+  .center {
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .center .logo {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+.wrapper .right {
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapper .right {
+    justify-content: center;
+  }
+}
+
+.right .register,
+.right .singIn {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  .right .register,
+  .right .singIn {
+    font-size: 0.5rem;
+  }
+}
+
+.right .singIn {
+  margin: 0 1rem;
+}
+
+.right .menuItem {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  .right .menuItem {
+    font-size: 1rem;
+    margin-left: 0.8rem;
+  }
+}
+
+.right .menuItem .cart {
+  position: relative;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+}
+
+.right .menuItem .circle {
+  position: absolute;
+  width: 1.08rem;
+  height: 1.08rem;
+  left: 1.08rem;
+  top: -0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background-color: #66339990;
+  color: #fff;
+}
+
+.right .menuItem .circle > span {
+  font-size: 0.7rem;
+}

@@ -1,0 +1,195 @@
+.containerCart {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapperCart {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapperCart {
+    padding: 1rem;
+  }
+}
+
+.titleCart {
+  font-weight: 300;
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.topButton {
+  padding: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: thin solid #222;
+  background-color: transparent;
+  color: #222;
+}
+
+.topButton.checkout {
+  background-color: #222;
+  color: #fff;
+}
+
+@media screen and (max-width: 380px) {
+  .topButton {
+    margin-left: 1rem;
+  }
+}
+
+.topText {
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0 0.8rem;
+}
+
+@media screen and (max-width: 380px) {
+  .topText {
+    display: none;
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 380px) {
+  .bottom {
+    flex-direction: column;
+  }
+}
+
+.infoBottom {
+  flex: 3;
+}
+
+.productInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 380px) {
+  .productInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+.productDetails {
+  flex: 2;
+  display: flex;
+}
+
+.imgProduct {
+  width: 200px;
+  object-fit: contain;
+}
+
+.detailsProduct {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.detailsProduct .productColor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.priceDetail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summaryBottom {
+  flex: 1;
+}
+
+.productAmountContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 380px) {
+  .productAmountContainer {
+    margin: 5px 1rem;
+  }
+}
+
+.productAmountContainer .productAmount {
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.priceDetail .productPrice {
+  font-size: 2.2rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 380px) {
+  .priceDetail .productPrice {
+    margin-bottom: 2rem;
+  }
+}
+
+hr {
+  background-color: #eee;
+  border: none;
+  height: 1px;
+}
+
+.summaryBottom {
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  padding: 2rem;
+  height: 50vh;
+}
+
+.summaryTitle {
+  font-weight: 400;
+}
+
+.summaryItem {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+.summaryItem.total {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.summaryItemText {
+}
+
+.summaryItemPrice {
+}
+
+.summaryBtn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}

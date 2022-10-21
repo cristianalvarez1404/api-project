@@ -1,0 +1,125 @@
+.containerFooter {
+  display: flex;
+}
+
+@media screen and (max-width: 380px) {
+  .containerFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.leftFooter {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 380px) {
+  .leftFooter {
+    background-color: #eee;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .leftFooter .titleFooter {
+    margin: 0 auto;
+  }
+}
+
+.leftFooter .descriptionFooter {
+  margin: 2rem 0rem;
+}
+
+.leftFooter .socialContainer {
+  display: flex;
+}
+
+@media screen and (max-width: 380px) {
+  .leftFooter .socialContainer {
+    margin: 0 auto;
+  }
+}
+
+.leftFooter .socialContainer .socialIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.centerFooter {
+  flex: 1;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 380px) {
+  .centerFooter {
+    display: none;
+    background-color: rebeccapurple;
+  }
+}
+
+.titleFooter {
+  font-size: 2rem;
+}
+
+.centerFooter .listFooter {
+  margin-top: 1rem;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.centerFooter .listFooter li {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.centerFooter .listFooter li:hover {
+  text-decoration: underline;
+}
+
+.rightFooter {
+  flex: 1;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 380px) {
+  .rightFooter {
+    width: 100%;
+    background-color: lightgray;
+  }
+}
+
+.contactItem {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactItem i {
+  margin-right: 0.8rem;
+}
+
+.contactItem p {
+}
+
+.payments {
+  display: flex;
+}
+
+.payments img {
+  width: 3.5rem;
+  height: 3rem;
+  object-fit: contain;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}

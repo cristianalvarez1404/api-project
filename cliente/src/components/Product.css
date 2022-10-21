@@ -1,0 +1,73 @@
+.containerProduct {
+  margin: 0.5rem;
+  height: 350px;
+  background-color: #f5fbfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  position: relative;
+}
+
+@media screen and (max-width: 380px) {
+  .containerProduct {
+    height: 250px;
+  }
+}
+
+.containerProduct .imgProduct {
+  width: 80%;
+  height: 75%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+@media screen and (max-width: 380px) {
+  .containerProduct .imgProduct {
+    width: 98.5%;
+    height: 94%;
+  }
+}
+
+.containerProduct .iconsProduct {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000020;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  z-index: 3;
+  transition: 0.2s ease opacity;
+  cursor: pointer;
+}
+
+.containerProduct .iconsProduct:hover {
+  opacity: 1;
+}
+
+.containerProduct .iconsProduct .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+  transition-property: backgroun-color, transform;
+}
+
+.containerProduct .iconsProduct .icon:hover {
+  background-color: #e9f5f5;
+  transform: scale(1.1);
+}
+
+.containerProduct .iconsProduct .icon:nth-child(2) {
+  margin: 0 1rem;
+}

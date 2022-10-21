@@ -1,0 +1,13 @@
+.containerCategories {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 2.5rem;
+}
+
+@media screen and (max-width: 380px) {
+  .containerCategories {
+    padding: 0.5rem;
+  }
+}

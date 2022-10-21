@@ -1,0 +1,70 @@
+.containerProductList {
+  width: 100vw;
+}
+
+.titleProductList {
+  font-size: 2rem;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterContainer .filter {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 380px) {
+  .filterContainer .filter {
+    margin: 0rem 2rem;
+  }
+}
+
+.filterContainer .filter > span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 380px) {
+  .filterContainer .filter > span {
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+  }
+}
+
+.select-item {
+  padding: 0.8rem;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 380px) {
+  .select-item {
+    padding: 0.5rem;
+    margin-right: 0.8rem;
+  }
+}
+
+.select-item option,
+.select-item option:disabled {
+  font-family: inherit;
+  font-size: 1.1rem;
+  color: #333;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 380px) {
+  .select-item option,
+  .select-item option:disabled {
+    font-family: inherit;
+    font-size: 0.75rem;
+    color: #333;
+    text-transform: capitalize;
+  }
+}

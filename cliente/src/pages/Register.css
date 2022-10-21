@@ -1,0 +1,93 @@
+.containerRegister {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(26, 232, 206);
+  background: linear-gradient(
+    90deg,
+    rgba(26, 232, 206, 1) 35%,
+    rgba(18, 225, 222, 1) 56%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapperRegister {
+  width: 40%;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapperRegister {
+    width: 80%;
+  }
+}
+
+.titleRegister {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.formRegister {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 380px) {
+  .formRegister {
+    flex-direction: column;
+  }
+}
+
+.formRegister > input {
+  flex: 1;
+  min-width: 40%;
+  margin: 2rem 0.8rem 0 0;
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.7rem;
+}
+
+@media screen and (max-width: 380px) {
+  .formRegister > input {
+    width: 100%;
+    margin: 1rem 0.8rem 0 0;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+}
+
+.formRegister > input::placeholder {
+  text-transform: capitalize;
+}
+
+.clausure {
+  font-size: 0.9rem;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 380px) {
+  .clausure {
+    font-size: 0.8rem;
+    margin: 1.5rem 0;
+  }
+}
+
+.btnCreate {
+  width: 40%;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: teal;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  .btnCreate {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0.8rem 1rem;
+  }
+}

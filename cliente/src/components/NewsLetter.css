@@ -1,0 +1,92 @@
+.containerLetter {
+  height: 60vh;
+  background-color: #fcf5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titleLetter {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 380px) {
+  .titleLetter {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.descLetter {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 380px) {
+  .descLetter {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+}
+
+.inputContainerLetter {
+  width: 50%;
+  height: 3rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: thin solid #d3d3d3;
+}
+
+@media screen and (max-width: 380px) {
+  .inputContainerLetter {
+    width: 80%;
+  }
+}
+
+.inputLetter {
+  height: 100%;
+  border: none;
+  flex: 9;
+  padding-left: 2rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+@media screen and (max-width: 380px) {
+  .inputLetter {
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+    font-family: inherit;
+  }
+}
+
+.inputLetter:focus {
+  border: none;
+  outline: none;
+  outline: medium solid teal;
+}
+
+.btnLetter {
+  height: 100%;
+  flex: 1;
+  border: none;
+  border: medium solid teal;
+  border-left: none;
+  background-color: teal;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btnLetter:focus {
+  outline: medium solid teal;
+}

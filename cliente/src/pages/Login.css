@@ -1,0 +1,72 @@
+.containerLogin {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(26, 232, 206);
+  background: linear-gradient(
+    90deg,
+    rgba(26, 232, 206, 1) 35%,
+    rgba(18, 225, 222, 1) 56%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapperLogin {
+  width: 25%;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 380px) {
+  .wrapperLogin {
+    width: 80%;
+  }
+}
+
+.titleLogin {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLogin > input {
+  flex: 1;
+  width: 100%;
+  margin: 0.8rem 0;
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.7rem;
+}
+
+.formLogin > input::placeholder {
+  text-transform: capitalize;
+}
+
+.clausure {
+  font-size: 0.9rem;
+  margin: 2rem 0;
+}
+
+.btnCreate {
+  width: 40%;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: teal;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  margin: 0.2rem 0;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #525252;
+}

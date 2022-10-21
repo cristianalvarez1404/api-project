@@ -1,0 +1,111 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f8ff30;
+  position: relative;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    display: none;
+  }
+}
+
+.container .arrow {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff7f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.1s ease-in background-color;
+  z-index: 100;
+}
+
+.container .arrow:hover {
+  background-color: #d7d7d7;
+}
+
+.arrow.arrow-left {
+  top: 50%;
+  left: 1.8%;
+}
+
+.arrow.arrow-right {
+  top: 50%;
+  right: 1.8%;
+}
+
+.wrapperSlide {
+  height: 100vh;
+  display: flex;
+  /* transform: translateX(-100vw); */
+  transition: 1.5s all ease;
+}
+
+.wrapperSlide .slide {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5fafd;
+}
+
+.slide .imageContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide .imageContainer img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.slide .infoContainer {
+  width: 50%;
+  padding: 3rem;
+}
+
+.infoContainer .title {
+  font-size: 4rem;
+  color: #00000090;
+}
+
+.infoContainer .description {
+  color: #00000090;
+  margin: 4rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+.infoContainer .btn {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border: thin solid #00000030;
+  border-radius: 0.5rem;
+  background-color: #d1d1d170;
+  cursor: pointer;
+  transition: 0.5s ease-in-out background-color;
+  color: #00000090;
+}
+
+.infoContainer .btn:hover {
+  background-color: transparent;
+  border: thin solid #d3d3d3;
+}
